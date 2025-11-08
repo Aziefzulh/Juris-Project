@@ -67,7 +67,7 @@ export const Header = ({ onInfoClick }: HeaderProps) => {
             <button
               onClick={onInfoClick}
               aria-label="Show instructions"
-              className="flex h-9 w-9 items-center justify-center rounded-full text-neutral-500 transition-colors hover:bg-neutral-200/75 hover:text-neutral-800"
+              className="flex h-9 w-9 items-center justify-center rounded-full text-neutral-500 transition-colors hover:bg-neutral-200/75 hover:text-neutral-800 cursor-pointer"
             >
               <Info size={20} />
             </button>

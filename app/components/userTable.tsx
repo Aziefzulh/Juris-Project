@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { FC, useMemo, useState } from "react";
 
+// preassigned colors
 const avatarColors = [
   { bg: 'bg-sky-100', text: 'text-sky-700' },
   { bg: 'bg-emerald-100', text: 'text-emerald-700' },
@@ -21,11 +22,13 @@ const avatarColors = [
   { bg: 'bg-lime-100', text: 'text-lime-700' },
 ];
 
+// assigning random color to avatars
 const getRandomColor = () => {
   const index = Math.floor(Math.random() * avatarColors.length);
   return avatarColors[index];
 };
 
+// avatars using initials
 const Avatar: FC<{ name: string }> = ({ name }) => {
   const getInitials = (name: string) => {
     const nameParts = name.split(' ');
@@ -35,6 +38,7 @@ const Avatar: FC<{ name: string }> = ({ name }) => {
     return name.substring(0, 2).toUpperCase();
   };
 
+  //assigning randob color to avatar
   const color = useMemo(() => getRandomColor(), []);
 
   return (
@@ -44,6 +48,7 @@ const Avatar: FC<{ name: string }> = ({ name }) => {
   );
 };
 
+// dummy data for table
 const initialUsers = [
   { id: 1, name: "Ahmad bin Ismail", email: "ahmad.i@example.com", status: "Active" },
   { id: 2, name: "Siti Nurhaliza", email: "siti.n@example.com", status: "Inactive" },

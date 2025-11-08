@@ -10,6 +10,7 @@ import {
   Users,
 } from "lucide-react";
 
+// dummy data for card stats
 const stats = [
   { title: "Total Users", value: "1,250", icon: <Users className="h-6 w-6 text-sky-500" />, color: "text-sky-500", bgColor: "bg-sky-500/25",},
   { title: "Total Sales", value: "RM 54,320", icon: <DollarSign className="h-6 w-6 text-emerald-500" />, color: "text-emerald-500", bgColor: "bg-emerald-500/25",},

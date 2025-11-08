@@ -2,6 +2,7 @@
 
 import { X } from "lucide-react";
 
+// click outside to close
 interface LightboxProps {
   isOpen: boolean;
   onClose: () => void;
@@ -30,9 +31,8 @@ export const Lightbox = ({ isOpen, onClose }: LightboxProps) => {
           <X />
         </button>
         <h2 id="modal-title" className="text-2xl font-bold text-neutral-900">Dashboard Instructions</h2>
-        <p className="mt-4 text-neutral-600">This is a modern, responsive dashboard UI. You can interact with various elements:</p>
+        <p className="mt-4 text-neutral-600">This is a lightbox instructions UI design</p>
         <ul className="mt-4 list-disc space-y-2 pl-5 text-neutral-600">
-          <li>Toggle between light and dark modes using the sun/moon icon.</li>
           <li>Sort the user table by clicking on the "Name" column header.</li>
           <li>The layout is responsive and will adapt to different screen sizes.</li>
         </ul>
